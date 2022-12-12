@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
 *main - Entry point
 *
@@ -8,23 +6,23 @@
 */
 int main(void)
 {
-int n1, n2, n3;
-for (n1 = 0; n1 < 8; n1++)
+int i, j, k;
+for (i = 0; i <= 7; i++)
 {
-for (n2 = n1 + 1; n2 < 9; n2++)
-{
-for (n3 = n2 + 1; n3 < 10; n3++)
-{
-putchar((n1 % 10) + '0');
-putchar((n2 % 10) + '0');
-putchar((n3 % 10) + '0');
-if (n1 == 7 && n2 == 8 && n3 == 9)
-continue;
-putchar(',');
-putchar(' ');
+	for (j = i + 1; j <= 8; j++)
+	{
+		for (k = j + 1; k <= 9; k++)
+		{
+	putchar(i + '0');
+	putchar(j + '0');
+	putchar(k + '0');
+	if (i == 7  && j == 8 && k == 9)
+	continue;
+	putchar(',');
+	putchar(' ');
+		}
+	}
 }
-}
-}
-putchar('\n');
+	putchar('\n');
 return (0);
 }
