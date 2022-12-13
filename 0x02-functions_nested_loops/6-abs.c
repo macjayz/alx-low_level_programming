@@ -8,6 +8,10 @@
 */
 int _abs(int ans)
 {
+if (ans < 0)
 ans *= -1;
+else
+ans;
+
 return (ans);
 }
