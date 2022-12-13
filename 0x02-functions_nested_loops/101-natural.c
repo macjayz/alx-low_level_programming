@@ -7,15 +7,15 @@
 */
 int main(void)
 {
-int i, z = 0;
-while (i < 1024)
+int i, sum = 0;
+for (i = 0; i < 1024; i++)
 {
 if ((i % 3 == 0) || (i % 5 == 0))
 {
-z += 1;
+sum += i;
 }
 i++;
 }
-printf("%d\n", z);
+printf("%d\n", sum);
 return (0);
 }
