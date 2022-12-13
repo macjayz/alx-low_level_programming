@@ -2,12 +2,14 @@
 /**
 *print_times_table - This function print the 9 times table
 *
+*@n: This accepts argument
+*
 *Return: Always 0 (Success)
 */
 void print_times_table(int n)
 {
 int x, y, z;
-
+if (n >= 0 && n <= 14)
 for (x = 0; x <= 9; x++)
 {
 for (y = 0; y <= 9; y++)
@@ -39,6 +41,7 @@ _putchar(32);
 _putchar(32);
 }
 _putchar(z + '0');
+}
 }
 _putchar('\n');
 }
