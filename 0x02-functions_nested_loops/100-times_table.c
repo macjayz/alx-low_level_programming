@@ -11,9 +11,9 @@ void print_times_table(int n)
 int x, y, z;
 if (n >= 0 && n <= 14)
 {
-for (x = 0; x <= 9; x++)
+for (x = 0; x <= n; x++)
 {
-for (y = 0; y <= 9; y++)
+for (y = 0; y <= n; y++)
 {
 z = x * y;
 if (z > 99)
