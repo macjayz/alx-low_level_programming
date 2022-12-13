@@ -4,6 +4,7 @@
 *
 *Return: Always 0 (Success)
 */
+int i;
 for (i = 0; ch[i] != '\0'; i++)
 {
 _putchar(ch[i]);
