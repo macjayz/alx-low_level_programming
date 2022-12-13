@@ -11,7 +11,7 @@ int _abs(int ans)
 if (ans < 0)
 ans *= -1;
 else
-ans;
+ans += 0;
 
 return (ans);
 }
