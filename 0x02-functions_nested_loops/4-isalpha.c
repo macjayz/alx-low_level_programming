@@ -1,17 +1,11 @@
 #include "main.h"
 /**
-*main - Entry point
+*_isalpha - This checks for alphabets both lower case and upper case
 *
 *Return: Always 0 (Success)
+*
+*@c: This receives an integer value argument from the main.c
 */
-int main(void)
-{
-int result = _isalpha('k');
-_putchar(result + '0');
-_putchar('\n');
-return (0);
-}
-
 int _isalpha(int c)
 {
 int lower = 'a';
@@ -26,7 +20,7 @@ upper++;
 }
 else
 {
-return 1;
+return (1);
 }
 }
 if (c != lower)
@@ -35,7 +29,7 @@ lower++;
 }
 else
 {
-return 1;
+return (1);
 }
 }
 return (0);
