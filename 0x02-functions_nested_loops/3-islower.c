@@ -1,20 +1,14 @@
 #include "main.h"
 /**
-*main - Entry point
+*_islower - This function checks for lower case alphabets
 *
 *Return: Always 0 (Success)
+*
+*@c: This varibales receives al integer value from the main.c
 */
-int main(void)
-{
-int result = _islower('c');
-_putchar(result + '0');
-_putchar('\n');
-return (0);
-}
-
 int _islower(int c)
 {
-int i= 'a';
+int i = 'a';
 while (i <= 'z')
 {
 if (c != i)
@@ -23,7 +17,7 @@ i++;
 }
 else
 {
-return 1;
+return (1);
 }
 }
 return (0);
