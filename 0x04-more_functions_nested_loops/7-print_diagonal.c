@@ -1,26 +1,33 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-* print_diagonal - This function prints line
-*
-* Return: 0
-*
-*@n: This accepts integer value
+*print_diagonal - prints a diagonal
+*@n: parameter
+*Return: returns nothing
 */
 
 void print_diagonal(int n)
 {
-int i;
-int j;
-if (n <= 0)
-_putchar(10);
-for (i = 1; i <= n; i++)
-{
-for (j = 1 ; j <= i; j++)
-{
-_putchar(' ');
-}
-_putchar(92);
-_putchar(10);
-}
+	int len, space;
+
+	if (n > 0)
+	{
+		for (len = 0; len < n; len++)
+		{
+			for (space = 0; space < len; space++)
+			{
+				putchar(' ');
+			}
+
+			putchar('\\');
+
+			if (len == (n - 1))
+			{
+				continue;
+			}
+			putchar('\n');
+		}
+	}
+	putchar('\n');
 }
