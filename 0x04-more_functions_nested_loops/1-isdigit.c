@@ -9,12 +9,10 @@
 
 int _isdigit(int c)
 {
-int i;
-for (i = 0; i < 10; i++)
+char i;
+for (i = '0'; i < '9'; i++)
 {
-printf("%d\n", i);
 if (i == c)
-printf("%d%d\n", i, c);
 return (1);
 }
 
