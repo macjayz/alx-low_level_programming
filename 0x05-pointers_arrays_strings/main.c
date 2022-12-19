@@ -11,17 +11,16 @@
 
 int main(void)
 {
+
 char *str;
 
-int len;
 
 
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 
-str = "My first strlen!";
+    _puts(str);
 
-len = _strlen(str);
+    return (0);
 
-printf("%d\n", len);
 
-return (0);
 }
