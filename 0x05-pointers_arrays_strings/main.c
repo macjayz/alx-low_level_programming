@@ -11,17 +11,17 @@
 
 int main(void)
 {
-int a;
+char *str;
 
-int b;
+int len;
 
-a = 98;
 
-b = 42;
 
-printf("a=%d, b=%d\n", a, b);
+str = "My first strlen!";
 
-swap_int(&a, &b);
-printf("a=%d, b=%d\n", a, b);
+len = _strlen(str);
+
+printf("%d\n", len);
+
 return (0);
 }
