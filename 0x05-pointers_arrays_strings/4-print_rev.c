@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 
 /**
@@ -11,26 +12,12 @@
 
 void print_rev(char *str)
 {
-int i = 0;
+int i;
+int length = strlen(str);
+for (i = length - 1; str[i] >= 0; i--)
+{
+_putchar(str[i]);
 
-
-
-	while (str[i] != 0)
-
-	{
-
-		i++;
-
-	}
-
-	while (i > 0)
-
-	{
-
-		i--;
-
-		_putchar(str[i]);
-
-	}
-		_putchar(10);
+}
+_putchar(10);
 }
