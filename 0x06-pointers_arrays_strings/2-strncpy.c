@@ -15,26 +15,31 @@ int _strcmp(char *s1, char *s2)
 
 {
 
-	int i = 0, r = 0;
+;
 
 
 
-	while (r == 0)
+	i = 0;
+
+	while (i < n && *(src + i))
 
 	{
 
-		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
-
-
-
-			break;
-
-		r = *(s1 + i) - *(s2 + i);
+		*(dest + i) = *(src + i);
 
 		i++;
 
 	}
 
-	return (r);
+	while (i < n)
 
+	{
+
+		*(dest + i) = '\0';
+
+		i++;
+
+	}
+
+	return (dest);
 }
