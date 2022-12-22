@@ -3,9 +3,10 @@
 
 
 /**
- * _strcmp - compares two strings
- * @s1: the first string.
- * @s2: the second string.
+ * _strncpy - compares two strings
+ * @dest: the first string.
+ * @src: the second string.
+ * @n: third integer argument.
  * Return: 0 if s1 and s2 are equals
  */
 
