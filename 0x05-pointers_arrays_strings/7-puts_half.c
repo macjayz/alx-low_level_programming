@@ -30,7 +30,7 @@ _putchar(10);
 else
 {
 int i;
-int mid = length / 2;
+int mid = (length - 1) / 2;
 for (i = mid; i < length; i++)
 {
 _putchar(str[i]);
