@@ -21,7 +21,7 @@ if (length % 2 != 0)
 int n = (length - 1) / 2;
 int i;
 
-for (i = n; i <= length; i++)
+for (i = n; i < length; i++)
 {
 _putchar(str[i]);
 }
@@ -31,7 +31,7 @@ else
 {
 int i;
 int mid = length / 2;
-for (i = mid; i <= length; i++)
+for (i = mid; i < length; i++)
 {
 _putchar(str[i]);
 }
