@@ -23,7 +23,7 @@ if (length % 2 != 0)
 int n = (length - 1) / 2;
 int i;
 
-for (i = n; str[i] != '\0'; i++)
+for (i = n; str[i] < length - 1;  i++)
 {
 _putchar(str[i]);
 }
@@ -35,7 +35,7 @@ int i;
 int mid = length / 2;
 for (i = mid; str[i] != '\0'; i++)
 {
-_putchar(str[i + 1]);
+_putchar(str[i]);
 }
 _putchar(10);
 }
