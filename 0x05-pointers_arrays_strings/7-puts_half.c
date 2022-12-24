@@ -25,7 +25,7 @@ int i;
 
 for (i = n; str[i] != '\0'; i++)
 {
-_putchar(str[i + 1]);
+_putchar(str[i]);
 }
 _putchar(10);
 }
@@ -35,7 +35,7 @@ int i;
 int mid = length / 2;
 for (i = mid; str[i] != '\0'; i++)
 {
-_putchar(str[i]);
+_putchar(str[i + 1]);
 }
 _putchar(10);
 }
