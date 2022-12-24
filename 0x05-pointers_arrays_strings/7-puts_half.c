@@ -25,7 +25,7 @@ int i;
 
 for (i = n; i < length - 1;  i++)
 {
-_putchar(str[i]);
+_putchar(str[i + 1]);
 }
 _putchar(10);
 }
