@@ -1,51 +1,43 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+
 
 /**
- * puts_half - prints half of a string
- * @str: the string to print half
- *
- *
- */
+* puts_half - This print reversed string
+*
+* Return: Always 0.
+*@str: This accepts pointer a argument
+*/
 
 void puts_half(char *str)
-
 {
-	int i = 0;
-	int j;
+int length = strlen(str);
+int i;
 
-	while (str[i] != '\0')
-	{
-		i++;
 
-	}
-	if (i % 2 == 0)
 
-	{
+if (length % 2 != 0)
+{
+int n = (length - 1) / 2;
+int i;
 
-		i = i / 2;
-
-	}
-
-	else
-
-	{
-
-		i = (i + 1) / 2;
-
-	}
-
-	while (str[i] != '\0')
-
-	{
-
-		j = str[i];
-
-		i++;
-
-		_putchar(j);
-
-	}
-
-	_putchar('\n');
+for (i = n; i <= length; i++)
+{
+_putchar(str[i]);
+}
+_putchar(10);
+}
+else
+{
+int i;
+int mid = length / 2;
+for (i = mid; i <= length; i++)
+{
+_putchar(str[i]);
+}
+_putchar(10);
+}
 
 }
+
