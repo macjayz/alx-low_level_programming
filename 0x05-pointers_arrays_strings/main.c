@@ -11,13 +11,17 @@
 
 int main(void)
 {
-char *str;
+char s1[98];
+
+    char *ptr;
 
 
 
-    str = "0123456789";
+    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
 
-    puts_half(str);
+    printf("%s", s1);
+
+    printf("%s", ptr);
 
     return (0);
 }
