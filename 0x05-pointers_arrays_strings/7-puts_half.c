@@ -19,7 +19,7 @@ if (length % 2 != 0)
 int n = (length - 1) / 2;
 int i;
 
-for (i = n; i < length;  i++)
+for (i = n; i < length - 1;  i++)
 {
 _putchar(str[i + 1]);
 }
