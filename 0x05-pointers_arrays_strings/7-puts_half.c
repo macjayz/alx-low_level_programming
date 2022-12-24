@@ -12,10 +12,8 @@
 
 void puts_half(char *str)
 {
-int length = 0;
+int length = strlen(str);
 
-while (str[length] != '\0')
-length++;
 
 if (length % 2 != 0)
 {
