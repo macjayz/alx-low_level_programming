@@ -33,7 +33,7 @@ else
 {
 int i;
 int mid = length / 2;
-for (i = mid; str[i] != '\0'; i++)
+for (i = mid; i < length; i++)
 {
 _putchar(str[i]);
 }
