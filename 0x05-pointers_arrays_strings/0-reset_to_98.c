@@ -1,16 +1,27 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 
 /**
-* reset_to_98 - check the code
+* _strcat - This function prints a string
 *
-* Return: Always 0.
-*@n: this accepts value
+*Return: 0
+*@dest: This accepts char argument
+*@src: This accepts char argument
 */
-
-void reset_to_98(int *n)
+char *_strcat(char *dest, char *src)
 {
+int i;
+int j;
 
-*n = 98;
+for (i = 0; dest[i] != '\0'; i++)
+{
+dest[i];
+}
+
+for (j = 0; src[j] != '\0'; j++, i++)
+{
+*(dest + i) = *(src + j);
+}
+return (dest);
 }
