@@ -12,26 +12,17 @@
 int main(void)
 {
 
-    char s1[98] = "Hello ";
-
-    char s2[] = "World!\n";
-
-    char *ptr;
+int n;
 
 
 
-    printf("%s\n", s1);
+    n = 402;
 
-    printf("%s", s2);
+    printf("n=%d\n", n);
 
-    ptr = _strcat(s1, s2);
+    reset_to_98(&n);
 
-    printf("%s", s1);
-
-    printf("%s", s2);
-
-    printf("%s", ptr);
+    printf("n=%d\n", n);
 
     return (0);
-
 }
