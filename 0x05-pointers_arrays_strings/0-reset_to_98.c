@@ -3,11 +3,10 @@
 #include <string.h>
 
 /**
-* _strcat - This function prints a string
+* reset_to_98 - This function intialise pointer to 98
 *
 *Return: 0
-*@dest: This accepts char argument
-*@src: This accepts char argument
+*@n: This accepts char argument
 */
 
 void reset_to_98(int *n)
