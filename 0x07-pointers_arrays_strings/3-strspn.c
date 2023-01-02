@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
-*_strchr- This function prints a string
+*_strspn- This function prints a string
 *
 *Return: 0
 *@s: This accepts char argument
-*@c: This accepts char argument
+*@accept: This accepts char argument
 */
 
 unsigned int _strspn(char *s, char *accept)
