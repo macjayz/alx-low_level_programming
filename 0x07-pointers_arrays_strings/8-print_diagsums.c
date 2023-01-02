@@ -3,15 +3,14 @@
 #include <string.h>
 
 /**
-*print_chessboard - This function prints a string
+*print_diagsums - This function prints a string
 *
 *Return: 0
 *@a: This accepts char argument
+*@size: Accepts size argument
 */
-
 void print_diagsums(int *a, int size)
 {
-
 	int i;
 	int c = 0;
 	int d = 0;
