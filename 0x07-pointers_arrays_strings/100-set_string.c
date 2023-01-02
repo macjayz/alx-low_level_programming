@@ -6,8 +6,8 @@
 *set_string - This function prints a string
 *
 *Return: 0
-*@s: This accepts char argument
-*@to: This accepts char argument argument
+*@s: This accepts char argument of double pointer
+*@to: This accepts char argument of a pointer
 */
 
 void set_string(char **s, char *to)
