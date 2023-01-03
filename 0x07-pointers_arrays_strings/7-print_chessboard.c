@@ -1,27 +1,39 @@
-#include "main.h"
-#include <stdio.h>
-#include <string.h>
+#include  "main.h"
+
+
 
 /**
-*print_chessboard - This function prints a string
+
+* print_chessboard - Prints chessboard
+
 *
-*Return: 0
-*@a: This accepts char argument
+
+* @a: Double pointer
+
+*
+
+* Return: 0
+
 */
 
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
+
 {
 
-	int i;
-	int c = 0;
-	int d = 0;
+	unsigned int i, j;
 
-	for (i = 0; i < size; i++)
+
+
+	for (i = 0; i < 8; i++)
+
 	{
-		c += a[i];
-		d += a[size - i - 1];
-		a += size;
+
+		for (j = 0; j < 8; j++)
+
+			_putchar(a[i][j]);
+
+		_putchar('\n');
+
 	}
-	printf("%d, ", c);
-	printf("%d\n", d);
+
 }
