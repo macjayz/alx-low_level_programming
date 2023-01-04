@@ -13,10 +13,14 @@
  */
 
 int main(void)
-
 {
+int n;
 
-   _print_rev_recursion("\nColton Walker");
+
+
+    n = _strlen_recursion("Corbin Coleman");
+
+    printf("%d\n", n);
 
     return (0);
 
