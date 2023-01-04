@@ -3,12 +3,10 @@
 #include <string.h>
 
 /**
-* _strncat - This function prints a string
+* _puts_recursion - This function prints a string
 *
 *Return: 0
-*@dest: This accepts char argument
-*@src: This accepts char argument
-*@n: This accepts int argument
+*@s: This accepts char argument
 */
 
 void _puts_recursion(char *s)
