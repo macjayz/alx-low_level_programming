@@ -1,52 +1,38 @@
 #include "main.h"
 
 
-
 /**
-* prime_check - Checks to see if number is prime
+* sqrt_check - Checks for the square root of c
 *
-* @f: Factor check
+* @g: Guess at sqrt
 *
-* @p: Possible prime number
+* @c: Number to find sqrt of
 *
-* Return: 1 if prime, 0 if not
-*
+* Return: -1 or sqrt of c
 */
 
 
-
-int prime_check(int f, int p)
+int sqrt_check(int g, int c)
 {
-
-	if (p < 2 || p % f == 0)
-
-		return (0);
-
-	else if (f > p / 2)
-
-		return (1);
-
-	else
-
-		return (prime_check(f + 1, p));
-
+	if (g * g == c)
+		return (g);
+	if (g * g > c)
+		return (-1);
+	return (sqrt_check(g + 1, c));
 }
 
-
-
 /**
-* is_prime_number - States if number is prime
+* _sqrt_recursion - Returns the natural square of a number
 *
-* @n: Number to check
+* @n: integer to find sqrt of
 *
-* Return: 1 if prime, 0 if not
+* Return: Natural square root or -1
 */
 
-
-
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-	if (n == 2)
-		return (1);
-	return (prime_check(2, n));
+	if (n == 0)
+		return (0);
+
+	return (sqrt_check(1, n));
 }
