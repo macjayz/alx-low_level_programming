@@ -15,6 +15,7 @@
 int main(int argc, char *argv[])
 {
 	int result, amount, cent;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
