@@ -23,7 +23,7 @@ return (1);
 first = atoi(argv[1]);
 second = atoi(argv[2]);
 
-result = first * second;
+result = first *second;
 printf("%d\n", result);
 
 return (0);
