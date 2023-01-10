@@ -17,7 +17,7 @@ return (NULL);
 
 arr = malloc(sizeof(char) * size);
 
-if(!arr)
+if (!arr)
 return (NULL);
 
 for (i = 0; i < size; i++)
