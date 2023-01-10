@@ -17,14 +17,14 @@ if (str == NULL)
 return (NULL);
 
 mal = malloc(sizeof(char) * (size + 1));
-if (!mal)
+if (mal == NULL)
 return (NULL);
 
 for (i = 0; i < (size); i++)
 {
 mal[i] = *(str + i);
 }
-if (!mal)
+if(!mal)
 return (NULL);
 
 return (mal);
