@@ -16,11 +16,11 @@ char *mal;
 if (str == NULL)
 return (NULL);
 
-mal = malloc(sizeof(char) * size);
+mal = malloc(sizeof(char) * (size + 1));
 if (!mal)
 return (NULL);
 
-for (i = 0; i < (size + 1); i++)
+for (i = 0; i < (size); i++)
 {
 mal[i] = *(str + i);
 }
