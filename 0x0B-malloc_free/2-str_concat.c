@@ -15,11 +15,11 @@ int size1, size2, length, i, j;
 char *mal;
 
 if (s1 == NULL)
-size1 = 1;
-else if (s2 == NULL)
-size2 = 1;
-else 
-{
+s1 = "";
+
+if (s2 == NULL)
+s2 = "";
+
 size1 = strlen(s1);
 size2 = strlen(s2);
 length = size1 + size2;
@@ -39,7 +39,6 @@ mal[i] = s2[j];
 }
 
 mal[i] = '\0';
-}
 
 if (!mal)
 return (NULL);
