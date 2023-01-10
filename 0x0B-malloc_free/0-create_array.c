@@ -22,8 +22,8 @@ for (i = 0; i < size; i++)
 arr[i] = c;
 }
 
-if (arr)
-return (arr);
-else
+if (!arr)
 return (NULL);
+
+return (arr);
 }
