@@ -24,6 +24,8 @@ for (i = 0; i < (size); i++)
 {
 mal[i] = *(str + i);
 }
+if (!mal)
+return (NULL);
 
 return (mal);
 }
