@@ -26,6 +26,8 @@ size2 = strlen(s2);
 length = size1 + size2;
 
 mal = malloc(sizeof(char) * (length + 2));
+if (!mal)
+return (NULL);
 
 for (i = 0; i < size1; i++)
 {
@@ -38,6 +40,9 @@ mal[i] = s2[j];
 }
 
 mal[i] = '\0';
+if (!mal)
+return (NULL);
+
 return (mal);
 }
 
