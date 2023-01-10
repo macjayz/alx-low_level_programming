@@ -20,11 +20,12 @@ mal = malloc(sizeof(char) * (size + 1));
 if (mal == NULL)
 return (NULL);
 
-for (i = 0; i < (size); i++)
+for (i = 0; i < size; i++)
 {
 mal[i] = *(str + i);
 }
 mal[i] = '\0';
+
 return (mal);
 }
 
