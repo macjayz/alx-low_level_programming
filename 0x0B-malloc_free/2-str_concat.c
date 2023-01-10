@@ -25,7 +25,7 @@ size1 = strlen(s1);
 size2 = strlen(s2);
 length = size1 + size2;
 
-mal = malloc(sizeof(char) * (length + 2));
+mal = malloc(sizeof(char) * (length + 1));
 if (!mal)
 return (NULL);
 
