@@ -24,7 +24,7 @@ mal = malloc(sizeof(char) * (size + 1));
 if (mal == NULL)
 return (NULL);
 
-for (i = 0; mal[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 mal[i] = *(str + i);
 }
