@@ -19,11 +19,10 @@ char *owner;
 };
 
 /**
-*my_dog - declaration function
+*my_dog: declaration function
 *@name: name
 *@age: age
 *@owner: owner
-*Return: dog
 *Description: declaration
 */
 
