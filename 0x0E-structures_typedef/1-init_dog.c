@@ -1,20 +1,19 @@
 #include <stdlib.h>
-#include "main.h"
 #include "dog.h"
 
 /**
-*init_dog 
+*init_dog - Dog struct function
+*@d: the struct variable to be intialized
+*@name: the name of the dog argument
+*@age: the age of the dog argument
+*@owner: the owner of the dog argument
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-d = malloc(sizeof(struct init_dog));
-if (d == NULL)
-return (NULL);
 
 d->name;
 d->age;
 d->owner;
 
-return (d);
 }
