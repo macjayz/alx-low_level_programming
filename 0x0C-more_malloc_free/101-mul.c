@@ -30,3 +30,4 @@ int i, j;
 	printf("%lu\n", mul);
 return (0);
 }
+

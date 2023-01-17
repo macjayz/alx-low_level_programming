@@ -35,6 +35,9 @@ mal = maloc(sizeof(char) * (length + 1);
 if (mal == NULL)
 return (NULL);
 
-for (k = 0; k < n && 
-
+for (k = 0; k < n && s2[k]; k++, i++)
+{
+;
+}
+return ();
 }
