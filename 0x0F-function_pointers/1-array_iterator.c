@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "function_pointers.h"
 
 /**
@@ -13,6 +14,6 @@ unsigned int i;
 
 for (i = 0; i < size; i++)
 {
-action(array[i]);
+(*action)(array[i]);
 }
 }
