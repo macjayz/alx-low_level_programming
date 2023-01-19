@@ -30,7 +30,7 @@ printf("%d", va_arg(args, int));
 break;
 
 case 'f':
-printf("%lf", va_arg(args, double));
+printf("%f", va_arg(args, double));
 break;
 
 case 's':
