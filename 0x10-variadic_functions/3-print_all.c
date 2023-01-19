@@ -40,7 +40,7 @@ if (s == NULL)
 s = "(nil)";
 printf("%s", s);
 break;
-i++;
+
 default:
 break;
 }
@@ -50,5 +50,6 @@ i++;
 }
 
 printf("\n");
+va_end(args);
 }
 
