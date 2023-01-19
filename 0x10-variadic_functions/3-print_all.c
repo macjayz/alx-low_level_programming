@@ -40,7 +40,7 @@ if (s == NULL)
 s = "(nil)";
 printf("%s", s);
 break;
-
+i++;
 default:
 break;
 }
