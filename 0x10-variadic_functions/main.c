@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <unistd.h>
 
 /**
 
@@ -12,7 +12,6 @@
  */
 
 int main(void)
-
 {
 
     print_all("ceis", 'B', 3, "stSchool");
