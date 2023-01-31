@@ -24,39 +24,27 @@ int main(void)
 
     listint_t *head;
 
-    listint_t *new;
-
-    listint_t hello = {8, NULL};
-
-    size_t n;
 
 
+    head = NULL;
 
-    head = &hello;
+    add_nodeint(&head, 0);
 
-    new = malloc(sizeof(listint_t));
+    add_nodeint(&head, 1);
 
-    if (new == NULL)
+    add_nodeint(&head, 2);
 
-    {
+    add_nodeint(&head, 3);
 
-        printf("Error\n");
+    add_nodeint(&head, 4);
 
-        return (1);
+    add_nodeint(&head, 98);
 
-    }
+    add_nodeint(&head, 402);
 
-    new->n = 9;
+    add_nodeint(&head, 1024);
 
-    new->next = head;
-
-    head = new;
-
-    n = listint_len(head);
-
-    printf("-> %lu elements\n", n);
-
-    free(new);
+    print_listint(head);
 
     return (0);
 
