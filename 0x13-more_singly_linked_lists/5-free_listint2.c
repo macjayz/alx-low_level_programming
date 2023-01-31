@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
-* free_listint - This function adds node to the end of
+* free_listint2 - This function adds node to the end of
 * a linked list
 * @head: This accepts struct argument
 * Return: 0
