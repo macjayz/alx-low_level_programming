@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
-* print_listint - This function prints the elements
-* of linked list
+* listint_len - This function prints the number of
+* elements in a linked list
 * @h: This accepts struct argument
 * Return: Unsigned int
 *
