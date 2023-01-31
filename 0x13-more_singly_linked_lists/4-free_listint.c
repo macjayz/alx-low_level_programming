@@ -4,17 +4,16 @@
 #include <stdlib.h>
 
 /**
-* add_nodeint_end - This function adds node to the end of
+* free_listint - This function adds node to the end of
 * a linked list
 * @head: This accepts struct argument
-* @n: This accepts number for node data
-* Return: The address of the new node
+* Return: 0
 */
 
 void free_listint(listint_t *head)
 {
 listint_t *temp;
-while(head)
+while (head)
 {
 temp = head->next;
 free(head);
