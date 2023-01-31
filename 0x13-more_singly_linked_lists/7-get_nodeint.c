@@ -23,17 +23,12 @@ if (head == NULL)
 return (NULL);
 
 temp = head;
-if (temp == NULL)
-return (NULL);
 
 while (i < index)
 {
 temp = temp->next;
 i++;
 }
-
-if (temp == NULL)
-return (NULL);
 
 return (temp);
 }
