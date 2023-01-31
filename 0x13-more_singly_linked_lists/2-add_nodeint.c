@@ -27,6 +27,8 @@ new->n = n;
 new->next = *head;
 *head = new;
 }
+if(*head == NULL)
+return (NULL);
 
 return (*head);
 
