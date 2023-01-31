@@ -18,11 +18,10 @@ listint_t *new, *temp;
 unsigned int i = 0;
 
 new = malloc(sizeof(listint_t));
-new->n = n;
-new->next = NULL;
-
 if (new == NULL)
 return (NULL);
+new->n = n;
+new->next = NULL;
 
 if (*head == NULL)
 return (NULL);
