@@ -24,7 +24,7 @@ return (NULL);
 
 temp = head;
 
-while (i < index)
+while (temp && (i < index))
 {
 temp = temp->next;
 i++;
