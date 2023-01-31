@@ -12,7 +12,7 @@
 
  * main - check the code
 
- * 
+ *
 
  * Return: Always 0.
 
@@ -52,7 +52,7 @@ int main(void)
 
     head = new;
 
-    n = print_listint(head);
+    n = listint_len(head);
 
     printf("-> %lu elements\n", n);
 
