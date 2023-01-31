@@ -32,7 +32,7 @@ temp = *head;
 if (i > idx)
 return (NULL);
 
-while (i < idx)
+while (temp && (i < idx))
 {
 temp = temp->next;
 i++;
