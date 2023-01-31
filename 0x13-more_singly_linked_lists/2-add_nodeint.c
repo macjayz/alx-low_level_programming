@@ -19,16 +19,9 @@ new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 
-if (*head == NULL)
-*head = new;
-else
-{
 new->n = n;
 new->next = *head;
 *head = new;
-}
-if(*head == NULL)
-return (NULL);
 
 return (*head);
 
