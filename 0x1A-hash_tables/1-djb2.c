@@ -6,17 +6,16 @@
  *
  * Return: The calculated hash.
  */
+
 unsigned long int hash_djb2(const unsigned char *str)
 {
-    unsigned long int hash = 5381;
+    unsigned long int hash;
     int c;
 
-    for (size_t i = 0; str[i]; i++)
+    hash = 5381;
+    while ((c = *str++))
     {
-        c = str[i];
         hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
     }
-
-    return hash;
+    return (hash);
 }
-
