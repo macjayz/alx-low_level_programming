@@ -5,8 +5,8 @@
 #include <string.h>
 
 /**
- * hash_node_s - hash table node
- * @key: string argument 
+ * struct hash_node_s - hash table node
+ * @key: string argument
  * @value: value arg relating to the key
  * @next: next node on the List
  */
@@ -19,7 +19,7 @@ typedef struct hash_node_s
 } hash_node_t;
 
 /**
- * hash_table_s - struct data type
+ * struct hash_table_s - struct data type
  * @size: data part
  * @array: array of type struct
  */
@@ -39,7 +39,7 @@ void hash_table_print(const hash_table_t *ht);
 void hash_table_delete(hash_table_t *ht);
 
 /**
- * shash_node_s - sorted hash table struct
+ * struct shash_node_s - sorted hash table struct
  * @key: key
  * @value: value
  * @next: next node of the List
@@ -56,7 +56,7 @@ typedef struct shash_node_s
 } shash_node_t;
 
 /**
- * shash_table_s - hash table sorted data struct
+ * struct shash_table_s - hash table sorted data struct
  * @size: size
  * @array: array
  * @shead: first element of the sorted linked list
