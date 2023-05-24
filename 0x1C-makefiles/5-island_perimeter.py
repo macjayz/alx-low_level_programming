@@ -8,13 +8,13 @@ def count_water_neighbors(grid, row, col):
     height = len(grid)
     width = len(grid[0])
 
-    if row > 0 and not grid[row - 1][col]:
+    if row > 0 or not grid[row - 1][col]:
         count += 1
-    if col > 0 and not grid[row][col - 1]:
+    if col > 0 or not grid[row][col - 1]:
         count += 1
-    if col < width - 1 and not grid[row][col + 1]:
+    if col < width - 1 or not grid[row][col + 1]:
         count += 1
-    if row < height - 1 and not grid[row + 1][col]:
+    if row < height - 1 or not grid[row + 1][col]:
         count += 1
 
     return count
